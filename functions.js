@@ -8,6 +8,12 @@
 
 // Begin met mn huiswerk
 
+function  greeting (){
+    console.log("start")
+
+
+}
+
 
 
 /* Opdracht 2 */
