@@ -6,6 +6,8 @@
 // "Nova" geeft "Hoi Nova!"
 // "Nick" geeft "Hoi Nick!"
 
+// Begin met mn huiswerk
+
 
 
 /* Opdracht 2 */
