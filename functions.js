@@ -241,21 +241,25 @@ console.log();
 // "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
 
-function testStringAndLetter(string, char){
 
-
-
-}
 console.log("Opgave 8");
-console.log(testStringAndLetter("jannie","e"))
 
+function testStringAndLetter(stringName, StringSingleCharacter) {
 
+    let number = 0;
+    let xxx = false;
+    for (let i = 0; i < stringName.length; i++) {
 
+        if (stringName[i] === StringSingleCharacter) {
+            number = number + 1;
+        }
+    }
+    return number
+}
 
-
-
-
-
+console.log(testStringAndLetter("Hans en marietje lopen naar de supermarkt", "e"))
+console.log(testStringAndLetter("Hans is zijn mondkapje vergeten", "a"))
+console.log();
 
 
 
@@ -268,6 +272,19 @@ console.log(testStringAndLetter("jannie","e"))
 // ---- Verwachte uitkomsten:
 // lastEntry([3, 6, 9, 17, 4, 6, 25, 4]) geeft 4
 // lastEntry([46, 65, 34, 204, 190, 89], 3) geeft [204, 190, 89]
+
+console.log("Opgave 9");
+function lastEntry(arrayStart,n){
+    const arrayNew=arrayStart.slice(n)
+    return arrayNew
+}
+
+console.log(lastEntry([3, 6, 9, 17, 4, 6, 25, 4],4));
+console.log(lastEntry([46, 65, 34, 204, 190, 89], 3));
+console.log();
+
+
+
 
 
 /* Opdracht 10 */
