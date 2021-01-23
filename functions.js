@@ -8,11 +8,12 @@
 
 // Begin met mn huiswerk
 
+console.log("Opgave 1");
 function greeting(name) {
     return ("Hoi " + name + "!");
 }
 
-console.log("Opgave 1");
+
 console.log(greeting("Nova"));
 console.log(greeting("Nick"));
 console.log();
@@ -25,12 +26,12 @@ console.log();
 // 1 geeft 60
 // 3 geeft 180
 // 23 geeft 1840  1380!!!!!
-
+console.log("Opgave 2");
 function calculateSeconds(minutes) {
     return minutes * 60;
 }
 
-console.log("Opgave 2");
+
 console.log(calculateSeconds(1));
 console.log(calculateSeconds(3));
 console.log(calculateSeconds(23));
@@ -44,6 +45,7 @@ console.log();
 // 0 geeft false
 // 300 geeft true
 
+console.log("Opgave 3");
 function checkGreaterThanZero(number) {
     if (number > 0) {
         return true;
@@ -52,7 +54,7 @@ function checkGreaterThanZero(number) {
     }
 }
 
-console.log("Opgave 3");
+
 console.log(checkGreaterThanZero(-3));
 console.log(checkGreaterThanZero(0));
 console.log(checkGreaterThanZero(300));
@@ -65,7 +67,7 @@ console.log();
 // 8 en 92 geeft false
 // 89 en 14 geeft true
 
-
+console.log("Opgave 4");
 function checkGreaterThanHunderd(number1, number2) {
     if (number1 + number2 > 100) {
         return true;
@@ -90,6 +92,7 @@ console.log();
 // ["abra", "cadabra"] geeft "abracadabra"
 // ["a", "b", "c", "d", "e"] geeft "abcde"
 
+console.log("Opgave 5");
 function glueTogether(testString) {
 
 
@@ -103,7 +106,7 @@ function glueTogether(testString) {
 
 }
 
-console.log("Opgave 5");
+
 console.log(glueTogether(["abra", "cadabra"]))
 console.log(glueTogether(["a", "b", "c", "d", "e"]))
 console.log();
@@ -120,14 +123,13 @@ console.log();
 // "vrienden" geeft "nedneirv"
 
 
-// stap 1, maak van string array
-// stap2 gebruik spit om een array te maken van afzonderlijke letters
-// stap 3 dan array reverse()
-// stap 4 dan joi gebruiken om weer een string te maken*/
-// stap 5 gebruik reverse om alles om te draaien
+// stap 1 gebruik split om een array te maken van afzonderlijke letters
+// stap 2 dan array reverse()
+// stap 3 dan joi gebruiken om weer een string te maken*/
 
 
-//ier met string en Array methoden
+//hier met string en Array methoden
+console.log("Opgave 6, string en array methoden");
 function turn(name) {
 
     let newArray = name.split("");
@@ -137,11 +139,14 @@ function turn(name) {
 
 }
 
-console.log("Opgave 6, string en array methoden");
+
 console.log(turn("koekje"))
 console.log(turn("vrienden"))
 console.log();
 
+
+
+console.log("Opgave 6, manual");
 // hier met een for loop
 function turnManual(name){
     let x = name.length;
@@ -156,14 +161,14 @@ function turnManual(name){
     return newName;
 
 }
-console.log("Opgave 6, manual");
+
 console.log(turnManual("Koekje"))
 console.log(turnManual("vrienden"))
 console.log();
 
 
 
-
+console.log("Opgave 6, manual inverse");
 /*hier met een inverse for loop*/
 
 function turnManualInverseFor(name){
@@ -180,7 +185,7 @@ function turnManualInverseFor(name){
 
 }
 
-console.log("Opgave 6, manual inverse");
+
 console.log(turnManualInverseFor("Koekje"))
 console.log(turnManualInverseFor("vrienden"))
 console.log();
@@ -197,6 +202,37 @@ console.log();
 // "madam" geeft true
 // "vrienden" geeft false
 
+// stap 1 gebruik split om een array te maken van afzonderlijke letters
+// stap 2 dan array reverse()
+// stap 3 dan join gebruiken om weer een string te maken*/
+// stap 4 vergelijk beide strings
+
+
+console.log("Opgave 7");
+function turnAround(name){
+//    stap1 string naar array
+    newArray=name.split("");
+
+    //stap 2 reverse
+    newArray=newArray.reverse()
+
+    //stap 3 join om weer een string te maken
+    let newString=newArray.join("")
+
+
+    //stap 4
+
+    if (name===newString){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+console.log(turnAround("lepel"))
+console.log();
+
 
 /* Opdracht 8 */
 // Schrijf een functie die een string en een letter verwacht. De functie telt hoe vaak die letter voorkomt in
@@ -204,6 +240,24 @@ console.log();
 // ---- Verwachte uitkomsten:
 // "Hans en marietje lopen naar de supermarkt" en "e" geeft 6
 // "Hans is zijn mondkapje vergeten" en "a" geeft 2
+
+function testStringAndLetter(string, char){
+
+
+
+}
+console.log("Opgave 8");
+console.log(testStringAndLetter("jannie","e"))
+
+
+
+
+
+
+
+
+
+
 
 
 // ------------------------------- ADVANCED (optionele bonusopdrachten)
